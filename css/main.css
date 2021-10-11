@@ -1,0 +1,200 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: #111111;
+    background-color: #111111;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    font-size: 16px;
+
+}
+
+.menu-btn{
+    position: absolute;
+    cursor: pointer;
+    top: 15px;
+    right: 40px;
+    color: #fff;
+    z-index: 2;
+    font-size: 1.2rem;
+    display: none;
+
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+
+}
+
+.wrapper {
+    width: 90%;
+    margin: auto;
+}
+
+.nav-main {
+    font-size: 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding: 20px 0px;
+}
+
+.nav-brand {
+    width: 50px;
+
+}
+
+.nav-main ul {
+    display: flex;
+}
+
+.nav-main ul li {
+    padding: 10px;
+}
+
+.nav-menu {
+    flex: 1;
+    margin-left: 50px;
+}
+
+/*Header*/
+.showcase {
+    width: 100%;
+    height: 550px;
+    background: url('../img/showcase.jpg') no-repeat center center/cover;
+    padding: 50px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    color: #fff;
+    text-shadow: 1px 1px #2a2a2a;
+}
+
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    border: 0px;
+    font-weight: 700;
+    padding: 10px 20px;
+    background: #262626;
+    color: #fff;
+    font-size: 15px;
+    border: 1px solid #fff;
+    margin: 10px 0px;
+
+}
+
+.btn:hover {
+    opacity: .7;
+}
+
+.avisos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.aviso {
+    color: #fff;
+}
+
+.aviso img {
+    width: 100%;
+    height: 180px;
+
+}
+
+/*banner uno*/
+.card-banner-one {
+    width: 100%;
+    height: 300px;
+    background: url('../img/houses.jpg') no-repeat center center/cover;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: flex-end;
+
+
+}
+
+.banner-wrapper {
+    padding: 20px;
+    color: #fff;
+    text-shadow: 1px 2px #2a2a2a;
+
+}
+
+.banner-wrapper h1,
+.banner-wrapper p {
+    margin: 10px 0 10px 0;
+}
+
+/*banner dos*/
+.card-banner-two {
+    width: 100%;
+    height: 300px;
+    background: url('../img/rent.jpg') no-repeat center center/cover;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: flex-end;
+
+
+}
+
+.banner-wrapper {
+    padding: 20px;
+    color: #fff;
+    text-shadow: 1px 2px #2a2a2a;
+
+}
+
+.banner-wrapper h1,
+.banner-wrapper p {
+    margin: 10px 0 10px 0;
+}
+
+@media (max-width: 800px) {
+    .nav-main ul.nav-menu{
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0px;
+        background: #2a2a2a;
+        height: 100%;
+        padding: 50px;
+        opacity: .9;
+        transform: translateX(-300px);
+        transition: transform .5s ease-in-out;
+    }
+    .nav-main ul.nav-menu.show{
+        transform: translateX(-50px);
+    }
+    .nav-main ul.nav-menu li{
+        padding: 15px;
+        font-size: 14px;
+    }
+    .nav-main ul.nav-menu-right{
+        margin-right: 40px;
+    }
+    .menu-btn{
+        display: block;
+    }
+    .avisos{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
