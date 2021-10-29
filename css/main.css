@@ -377,6 +377,12 @@ footer{
     .avisos{
         grid-template-columns: repeat(2, 1fr);
     }
+    .location{
+        grid-template-columns: 1fr;
+    }
+    .location iframe{
+        max-height: 200px; 
+    }
     
 }
 @media (max-width:500px){
